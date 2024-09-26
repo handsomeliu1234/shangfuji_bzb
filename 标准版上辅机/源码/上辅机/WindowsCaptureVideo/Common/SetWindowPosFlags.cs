@@ -1,0 +1,40 @@
+﻿using System;
+
+namespace WindowsCaptureVideo.Common
+{
+	// Token: 0x0200000A RID: 10
+	[Flags]
+	public enum SetWindowPosFlags : uint
+	{
+		// Token: 0x0400001D RID: 29
+		SWP_ASYNCWINDOWPOS = 16384U,
+		// Token: 0x0400001E RID: 30
+		SWP_DEFERERASE = 8192U,
+		// Token: 0x0400001F RID: 31
+		SWP_DRAWFRAME = 32U,
+		// Token: 0x04000020 RID: 32
+		SWP_FRAMECHANGED = 32U,
+		// Token: 0x04000021 RID: 33
+		SWP_HIDEWINDOW = 128U,
+		// Token: 0x04000022 RID: 34
+		SWP_NOACTIVATE = 16U,
+		// Token: 0x04000023 RID: 35
+		SWP_NOCOPYBITS = 256U,
+		// Token: 0x04000024 RID: 36
+		SWP_NOMOVE = 2U,
+		// Token: 0x04000025 RID: 37
+		SWP_NOOWNERZORDER = 512U,
+		// Token: 0x04000026 RID: 38
+		SWP_NOREDRAW = 8U,
+		// Token: 0x04000027 RID: 39
+		SWP_NOREPOSITION = 512U,
+		// Token: 0x04000028 RID: 40
+		SWP_NOSENDCHANGING = 1024U,
+		// Token: 0x04000029 RID: 41
+		SWP_NOSIZE = 1U,
+		// Token: 0x0400002A RID: 42
+		SWP_NOZORDER = 4U,
+		// Token: 0x0400002B RID: 43
+		SWP_SHOWWINDOW = 64U
+	}
+}

@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDC22CB0-AD28-4146-9600-7B3482D6E99F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewuControl</RootNamespace>
+    <AssemblyName>NewuControl</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\NewuSoft\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\NewuSoft\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.TeeChart, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\AxInterop.TeeChart.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.TeeChart">
+      <HintPath>..\DLL\Interop.TeeChart.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Iocomp.Instrumentation.WF35.Common">
+      <HintPath>..\DLL\Iocomp.Net.WF3.5\Iocomp.Instrumentation.WF35.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Iocomp.Instrumentation.WF35.Pro">
+      <HintPath>..\DLL\Iocomp.Net.WF3.5\Iocomp.Instrumentation.WF35.Pro.dll</HintPath>
+    </Reference>
+    <Reference Include="Iocomp.Instrumentation.WF35.Std">
+      <HintPath>..\DLL\Iocomp.Net.WF3.5\Iocomp.Instrumentation.WF35.Std.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarScale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BarScale.Designer.cs">
+      <DependentUpon>BarScale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarbonBin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CarbonBin.Designer.cs">
+      <DependentUpon>CarbonBin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="CustomCirclePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomCirclePanel.Designer.cs">
+      <DependentUpon>CustomCirclePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomPanel.Designer.cs">
+      <DependentUpon>CustomPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisPlayBarBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisPlayBarBar.Designer.cs">
+      <DependentUpon>DisPlayBarBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DownMixPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MixPartFinal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MixPartFinal.Designer.cs">
+      <DependentUpon>MixPartFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewuPicAngle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewuPicAngle.designer.cs">
+      <DependentUpon>NewuPicAngle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewuToolBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NewuYiBiao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewuYiBiao.Designer.cs">
+      <DependentUpon>NewuYiBiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuoXuan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LuoXuan.Designer.cs">
+      <DependentUpon>LuoXuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MixPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MixPart.Designer.cs">
+      <DependentUpon>MixPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewuYiBiao2Final.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewuYiBiao2Final.Designer.cs">
+      <DependentUpon>NewuYiBiao2Final.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewuYiBiaoFinal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewuYiBiaoFinal.Designer.cs">
+      <DependentUpon>NewuYiBiaoFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OilTank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OilTank.Designer.cs">
+      <DependentUpon>OilTank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PagerControl.Designer.cs">
+      <DependentUpon>PagerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaintClass.cs" />
+    <Compile Include="ProccessBar2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProccessBar2.Designer.cs">
+      <DependentUpon>ProccessBar2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RubberScale2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RubberScale2.Designer.cs">
+      <DependentUpon>RubberScale2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScaleFinal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScaleFinal.Designer.cs">
+      <DependentUpon>ScaleFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrollDisplayBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScrollDisplayBar.Designer.cs">
+      <DependentUpon>ScrollDisplayBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrollingText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScrollingText.Designer.cs">
+      <DependentUpon>ScrollingText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserProgress.designer.cs">
+      <DependentUpon>UserProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RubberScale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RubberScale.Designer.cs">
+      <DependentUpon>RubberScale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Scale.Designer.cs">
+      <DependentUpon>Scale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XfLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XfLog.designer.cs">
+      <DependentUpon>XfLog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BarScale.resx">
+      <DependentUpon>BarScale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarbonBin.resx">
+      <DependentUpon>CarbonBin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomCirclePanel.resx">
+      <DependentUpon>CustomCirclePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomPanel.resx">
+      <DependentUpon>CustomPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisPlayBarBar.resx">
+      <DependentUpon>DisPlayBarBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DownMixPart.resx">
+      <DependentUpon>DownMixPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MixPartFinal.resx">
+      <DependentUpon>MixPartFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewuPicAngle.resx">
+      <DependentUpon>NewuPicAngle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewuYiBiao.resx">
+      <DependentUpon>NewuYiBiao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuoXuan.resx">
+      <DependentUpon>LuoXuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MixPart.resx">
+      <DependentUpon>MixPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewuYiBiao2Final.resx">
+      <DependentUpon>NewuYiBiao2Final.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewuYiBiaoFinal.resx">
+      <DependentUpon>NewuYiBiaoFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OilTank.resx">
+      <DependentUpon>OilTank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagerControl.resx">
+      <DependentUpon>PagerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProccessBar2.resx">
+      <DependentUpon>ProccessBar2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RubberScale2.resx">
+      <DependentUpon>RubberScale2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScaleFinal.resx">
+      <DependentUpon>ScaleFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrollDisplayBar.resx">
+      <DependentUpon>ScrollDisplayBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrollingText.resx">
+      <DependentUpon>ScrollingText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProgress.resx">
+      <DependentUpon>UserProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RubberScale.resx">
+      <DependentUpon>RubberScale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scale.resx">
+      <DependentUpon>Scale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewuYiBiao2.resx">
+      <DependentUpon>NewuYiBiao2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScaleDetail.resx">
+      <DependentUpon>ScaleDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="XfLog.resx">
+      <DependentUpon>XfLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NewuYiBiao2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewuYiBiao2.Designer.cs">
+      <DependentUpon>NewuYiBiao2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScaleDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScaleDetail.Designer.cs">
+      <DependentUpon>ScaleDetail.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FluidizingConveyorLeft.Bg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FluidizingConveyorLeft.Fore.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotorLeft.Bg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotorLeft.Fore.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MixPart.Fore.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicMixRotor.Bg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicMixRotor.Active.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicMixRotor.Run.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RubberScale.Run.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RubberScale.Fore.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RubberConveyor.Run.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RubberConveyor.Fore.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zhuanzi.static.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\密炼机1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Fa_Background.png" />
+    <Content Include="Resources\Fa_BackgroundDown.png" />
+    <Content Include="Resources\Fa_BackgroundRight.png" />
+    <Content Include="Resources\Fa_BackgroundUp.png" />
+    <Content Include="Resources\Fa_Foreground.png" />
+    <Content Include="Resources\Fa_ForegroundDown.png" />
+    <Content Include="Resources\Fa_ForegroundRight.png" />
+    <Content Include="Resources\Fa_ForegroundUp.png" />
+    <Content Include="Resources\FluidizingConveyorRight.Bg.gif" />
+    <Content Include="Resources\FluidizingConveyorRight.Fore.gif" />
+    <Content Include="Resources\下载.png" />
+    <Content Include="Resources\下载3_download-three.png" />
+    <Content Include="Resources\下载_download-four.png" />
+    <Content Include="Resources\二维码e.png" />
+    <Content Include="Resources\传入.png" />
+    <Content Include="Resources\修改.ico" />
+    <Content Include="Resources\修改_modify.png" />
+    <Content Include="Resources\关门.png" />
+    <Content Include="Resources\创建.png" />
+    <Content Include="Resources\删除主题_delete-themes.png" />
+    <Content Include="Resources\历史记录.png" />
+    <Content Include="Resources\发送.ico" />
+    <Content Include="Resources\导入.png" />
+    <Content Include="Resources\开门.png" />
+    <Content Include="Resources\扫描.png" />
+    <Content Include="Resources\报表 .ico" />
+    <Content Include="Resources\报警信息统计与分析.ico" />
+    <Content Include="Resources\撤销_undo.png" />
+    <Content Include="Resources\文件删除.png" />
+    <Content Include="Resources\文件复制.png" />
+    <Content Include="Resources\文件添加.png" />
+    <Content Include="Resources\文件编辑.png" />
+    <Content Include="Resources\栓位中_bg.png" />
+    <Content Include="Resources\栓位中_fore.png" />
+    <Content Include="Resources\栓位低_bg.png" />
+    <Content Include="Resources\栓位低_fore.png" />
+    <Content Include="Resources\栓位高_bg.png" />
+    <Content Include="Resources\栓位高_fore.png" />
+    <Content Include="Resources\校核.png" />
+    <Content Include="Resources\添加.png" />
+    <Content Include="Resources\添加同级条目_add-item.png" />
+    <Content Include="Resources\添加子条目_add-subset.png" />
+    <Content Include="Resources\班次.png" />
+    <Content Include="Resources\用户.png" />
+    <Content Include="Resources\登录.ico" />
+    <Content Include="Resources\相邻条目_adjacent-item.png" />
+    <Content Include="Resources\窗体.ico" />
+    <Content Include="Resources\窗口.ico" />
+    <Content Include="Resources\管道_bg.gif" />
+    <Content Include="Resources\管道_fore.png" />
+    <Content Include="Resources\管道弯_fore.png" />
+    <Content Include="Resources\系统.ico" />
+    <Content Include="Resources\计算器.png" />
+    <Content Include="Resources\设备.png" />
+    <Content Include="Resources\add_Green.png" />
+    <Content Include="Resources\bg_status.png" />
+    <Content Include="Resources\CarbonBin.png" />
+    <Content Include="Resources\CarbonBin0.png" />
+    <Content Include="Resources\CarbonBin1.png" />
+    <Content Include="Resources\CarbonScale.png" />
+    <Content Include="Resources\CarbonScale_bg.png" />
+    <Content Include="Resources\CarbonScale_fore.png" />
+    <Content Include="Resources\Drug.png" />
+    <Content Include="Resources\ic_next %281%29.png" />
+    <Content Include="Resources\ic_next.png" />
+    <Content Include="Resources\ic_previous.png" />
+    <Content Include="Resources\lianganglu.png" />
+    <Content Include="Resources\Newuni.png" />
+    <Content Include="Resources\Newuni1.png" />
+    <Content Include="Resources\Oil.png" />
+    <Content Include="Resources\OilScale_bg.png" />
+    <Content Include="Resources\OilScale_fore.png" />
+    <Content Include="Resources\Rubber.png" />
+    <Content Include="Resources\Si.png" />
+    <Content Include="Resources\SiScale_bg.png" />
+    <Content Include="Resources\SiScale_fore.png" />
+    <Content Include="Resources\upload.png" />
+    <Content Include="Resources\Zno.png" />
+    <Content Include="Resources\ZnoScale_bg.png" />
+    <Content Include="Resources\ZnoScale_fore.png" />
+    <Content Include="Resources\上传.png" />
+    <Content Include="Resources\上移.png" />
+    <Content Include="Resources\下移.png" />
+    <Content Include="Resources\企业用户 %282%29.png" />
+    <Content Include="Resources\企业用户.png" />
+    <Content Include="Resources\保存.png" />
+    <Content Include="Resources\停止 %281%29.png" />
+    <Content Include="Resources\停止 %282%29.png" />
+    <Content Include="Resources\停止.png" />
+    <Content Include="Resources\关闭小 %281%29.png" />
+    <Content Include="Resources\关闭小.png" />
+    <Content Include="Resources\删除 %281%29.png" />
+    <Content Include="Resources\删除.png" />
+    <Content Include="Resources\删除角色用户 %281%29.png" />
+    <Content Include="Resources\删除角色用户.png" />
+    <Content Include="Resources\刷新.png" />
+    <Content Include="Resources\发送.png" />
+    <Content Include="Resources\右移 %281%29.png" />
+    <Content Include="Resources\右移 %282%29.png" />
+    <Content Include="Resources\右移.png" />
+    <Content Include="Resources\增加.png" />
+    <Content Include="Resources\复制.png" />
+    <Content Include="Resources\导出.png" />
+    <Content Include="Resources\左移-01.png" />
+    <Content Include="Resources\左移-02.png" />
+    <Content Include="Resources\左移-03.png" />
+    <Content Include="Resources\左移.png" />
+    <Content Include="Resources\Manual.png" />
+    <Content Include="Resources\手动%402x.png" />
+    <Content Include="Resources\报表.png" />
+    <Content Include="Resources\新增角色用户.png" />
+    <Content Include="Resources\曲线.png" />
+    <Content Include="Resources\权限修改.png" />
+    <Content Include="Resources\查询 %281%29.png" />
+    <Content Include="Resources\查询.png" />
+    <Content Include="Resources\清空.png" />
+    <Content Include="Resources\灰色储罐.png" />
+    <Content Include="Resources\班次icon.png" />
+    <Content Include="Resources\班组.png" />
+    <Content Include="Resources\登录.png" />
+    <Content Include="Resources\称量.png" />
+    <Content Include="Resources\红灯%402x.png" />
+    <Content Include="Resources\统计表.png" />
+    <Content Include="Resources\绿灯%402x.png" />
+    <Content Include="Resources\编辑.png" />
+    <Content Include="Resources\编辑角色.png" />
+    <Content Include="Resources\Auto.png" />
+    <Content Include="Resources\设置.png" />
+    <Content Include="Resources\身份登录.png" />
+    <Content Include="Resources\输入密码.png" />
+    <Content Include="Resources\运行 %281%29.png" />
+    <Content Include="Resources\运行.png" />
+    <Content Include="Resources\退出登录 %281%29.png" />
+    <Content Include="Resources\退出登录.png" />
+    <Content Include="Resources\自动控制.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NewuCommon\Common.csproj">
+      <Project>{b14b35b9-377b-40c5-8eb5-e8863f194eba}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\Repository.csproj">
+      <Project>{4ee625b4-d5a3-436a-8e45-7d3e99b47087}</Project>
+      <Name>Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC72EAEA-2C64-437D-AF2C-F2265D1DDA00}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewuRPT</RootNamespace>
+    <AssemblyName>NewuRPT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\NewuSoft\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\NewuSoft\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Dapper.2.0.4\lib\netstandard2.0\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.5.3.3, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.3.3\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces">
+      <HintPath>..\packages\EPPlus.Interfaces.6.1.1\lib\net462\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing">
+      <HintPath>..\packages\EPPlus.System.Drawing.6.1.1\lib\net462\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport, Version=2023.1.8.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.DataVisualization, Version=2022.3.2.0, Culture=neutral, PublicKeyToken=406e1f4c3c8ef97e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\FastReport.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="HslControls, Version=3.3.1.0, Culture=neutral, PublicKeyToken=a3ad7c5c937ec0c0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\HslControls.3.3.1\lib\net45\HslControls.dll</HintPath>
+    </Reference>
+    <Reference Include="HZH_Controls, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HZH_Controls.1.5.240416\lib\net40\HZH_Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.5.3.3\lib\net46\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TeeChart, Version=3.2.2699.17379, Culture=neutral, PublicKeyToken=ec7a903a227899d6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\TeeChart.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Curve.cs" />
+    <Compile Include="Curve_Super.cs" />
+    <Compile Include="FM_DataAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_DataAnalysis.Designer.cs">
+      <DependentUpon>FM_DataAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_MaterialStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_MaterialStatistics.Designer.cs">
+      <DependentUpon>FM_MaterialStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_MixCurve_Super_Super.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_MixCurve_Super_Super.Designer.cs">
+      <DependentUpon>FM_MixCurve_Super_Super.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_MLData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_MLData.Designer.cs">
+      <DependentUpon>FM_MLData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_ProductionStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_ProductionStatistics.Designer.cs">
+      <DependentUpon>FM_ProductionStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_RPT_AlarmLogStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_RPT_AlarmLogStat.Designer.cs">
+      <DependentUpon>FM_RPT_AlarmLogStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_RPT_AppEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_RPT_AppEvent.Designer.cs">
+      <DependentUpon>FM_RPT_AppEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_RPT_AutoCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_RPT_AutoCheck.Designer.cs">
+      <DependentUpon>FM_RPT_AutoCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_RPT_BatchReportDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_RPT_BatchReportDetail.Designer.cs">
+      <DependentUpon>FM_RPT_BatchReportDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_RPT_BatchReport_FastReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_RPT_BatchReport_FastReport.Designer.cs">
+      <DependentUpon>FM_RPT_BatchReport_FastReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_RPT_LotReport_FastReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_RPT_LotReport_FastReport.Designer.cs">
+      <DependentUpon>FM_RPT_LotReport_FastReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_RPT_WeightPASSRateNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_RPT_WeightPASSRateNew.Designer.cs">
+      <DependentUpon>FM_RPT_WeightPASSRateNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_RPT_DeviceEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_RPT_DeviceEvent.Designer.cs">
+      <DependentUpon>FM_RPT_DeviceEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_PM_OrderTran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_PM_OrderTran.Designer.cs">
+      <DependentUpon>FM_PM_OrderTran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_RPT_AlarmLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_RPT_AlarmLog.Designer.cs">
+      <DependentUpon>FM_RPT_AlarmLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FM_DataAnalysis.resx">
+      <DependentUpon>FM_DataAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_MaterialStatistics.resx">
+      <DependentUpon>FM_MaterialStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_MixCurve_Super_Super.resx">
+      <DependentUpon>FM_MixCurve_Super_Super.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_MLData.resx">
+      <DependentUpon>FM_MLData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_ProductionStatistics.resx">
+      <DependentUpon>FM_ProductionStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_RPT_AlarmLogStat.resx">
+      <DependentUpon>FM_RPT_AlarmLogStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_RPT_AppEvent.resx">
+      <DependentUpon>FM_RPT_AppEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_RPT_AutoCheck.resx">
+      <DependentUpon>FM_RPT_AutoCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_RPT_BatchReportDetail.resx">
+      <DependentUpon>FM_RPT_BatchReportDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_RPT_BatchReport_FastReport.resx">
+      <DependentUpon>FM_RPT_BatchReport_FastReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_RPT_DeviceEvent.resx">
+      <DependentUpon>FM_RPT_DeviceEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_PM_OrderTran.resx">
+      <DependentUpon>FM_PM_OrderTran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_RPT_AlarmLog.resx">
+      <DependentUpon>FM_RPT_AlarmLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_RPT_LotReport_FastReport.resx">
+      <DependentUpon>FM_RPT_LotReport_FastReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_RPT_WeightPASSRateNew.resx">
+      <DependentUpon>FM_RPT_WeightPASSRateNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MultiLanguage\MultiLanguage.csproj">
+      <Project>{54F6103A-3275-41AE-A038-10AF1467599F}</Project>
+      <Name>MultiLanguage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewuCommon\Common.csproj">
+      <Project>{b14b35b9-377b-40c5-8eb5-e8863f194eba}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewuControl\NewuControl.csproj">
+      <Project>{FDC22CB0-AD28-4146-9600-7B3482D6E99F}</Project>
+      <Name>NewuControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewuTB\NewuTB.csproj">
+      <Project>{c94effc9-b336-4a74-a7c8-a09cb854ff38}</Project>
+      <Name>NewuTB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewuView\NewuView.csproj">
+      <Project>{9df499fe-83e1-4a00-80cb-e4cfc6cbe162}</Project>
+      <Name>NewuView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\Repository.csproj">
+      <Project>{4EE625B4-D5A3-436A-8E45-7D3E99B47087}</Project>
+      <Name>Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C94EFFC9-B336-4A74-A7C8-A09CB854FF38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewuTB</RootNamespace>
+    <AssemblyName>NewuTB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\NewuSoft\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\NewuSoft\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.TeeChart, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\AxInterop.TeeChart.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonTools, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\CommonTools.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=6.2.6.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EPPlus.4.5.3.3\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="HslControls">
+      <HintPath>..\packages\HslControls.3.3.1\lib\net45\HslControls.dll</HintPath>
+    </Reference>
+    <Reference Include="HZH_Controls">
+      <HintPath>..\packages\HZH_Controls.1.5.240416\lib\net40\HZH_Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.TeeChart">
+      <HintPath>..\DLL\Interop.TeeChart.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.3.0.1\lib\netstandard2.0\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.5.3.3\lib\net46\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TeeChart, Version=3.2.2699.17379, Culture=neutral, PublicKeyToken=ec7a903a227899d6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\TeeChart.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formula\FM_FormulaMixF_AddStep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formula\FM_FormulaMixF_AddStep.Designer.cs">
+      <DependentUpon>FM_FormulaMixF_AddStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formula\FM_FormulaOperateLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formula\FM_FormulaOperateLog.Designer.cs">
+      <DependentUpon>FM_FormulaOperateLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_CheckScale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_CheckScale.Designer.cs">
+      <DependentUpon>FM_CheckScale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_CheckScale_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_CheckScale_Add.Designer.cs">
+      <DependentUpon>FM_CheckScale_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_CheckWeightSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_CheckWeightSet.Designer.cs">
+      <DependentUpon>FM_CheckWeightSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_PM_OrderTran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_PM_OrderTran.Designer.cs">
+      <DependentUpon>FM_PM_OrderTran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_PM_OrderTran_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_PM_OrderTran_Add.Designer.cs">
+      <DependentUpon>FM_PM_OrderTran_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_PM_ScanRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_PM_ScanRecord.Designer.cs">
+      <DependentUpon>FM_PM_ScanRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_TB_Alarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_TB_Alarm.Designer.cs">
+      <DependentUpon>FM_TB_Alarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_TB_Alarm_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_TB_Alarm_Add.Designer.cs">
+      <DependentUpon>FM_TB_Alarm_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_TB_BinSeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_TB_BinSeting.Designer.cs">
+      <DependentUpon>FM_TB_BinSeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_TB_Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_TB_Department.Designer.cs">
+      <DependentUpon>FM_TB_Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_TB_FeedingParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_TB_FeedingParam.Designer.cs">
+      <DependentUpon>FM_TB_FeedingParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_TB_OperateLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_TB_OperateLog.Designer.cs">
+      <DependentUpon>FM_TB_OperateLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_TB_Privilege.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_TB_Privilege.Designer.cs">
+      <DependentUpon>FM_TB_Privilege.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_TB_Role.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_TB_Role.Designer.cs">
+      <DependentUpon>FM_TB_Role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_TB_Role_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_TB_Role_Add.Designer.cs">
+      <DependentUpon>FM_TB_Role_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\FM_TB_UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\FM_TB_UserInfo.Designer.cs">
+      <DependentUpon>FM_TB_UserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formula\FM_FormulaMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formula\FM_FormulaMaterial.Designer.cs">
+      <DependentUpon>FM_FormulaMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formula\FM_FormulaMaterial_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formula\FM_FormulaMaterial_Add.Designer.cs">
+      <DependentUpon>FM_FormulaMaterial_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formula\FM_FormulaLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formula\FM_FormulaLibrary.Designer.cs">
+      <DependentUpon>FM_FormulaLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formula\FM_FormulaMix_AddStep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formula\FM_FormulaMix_AddStep.Designer.cs">
+      <DependentUpon>FM_FormulaMix_AddStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Utils.cs" />
+    <EmbeddedResource Include="Formula\FM_FormulaMixF_AddStep.resx">
+      <DependentUpon>FM_FormulaMixF_AddStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formula\FM_FormulaOperateLog.resx">
+      <DependentUpon>FM_FormulaOperateLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_CheckScale.resx">
+      <DependentUpon>FM_CheckScale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_CheckScale_Add.resx">
+      <DependentUpon>FM_CheckScale_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_CheckWeightSet.resx">
+      <DependentUpon>FM_CheckWeightSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_PM_OrderTran.resx">
+      <DependentUpon>FM_PM_OrderTran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_PM_OrderTran_Add.resx">
+      <DependentUpon>FM_PM_OrderTran_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_PM_ScanRecord.resx">
+      <DependentUpon>FM_PM_ScanRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_TB_Alarm.resx">
+      <DependentUpon>FM_TB_Alarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_TB_Alarm_Add.resx">
+      <DependentUpon>FM_TB_Alarm_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_TB_BinSeting.resx">
+      <DependentUpon>FM_TB_BinSeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_TB_Department.resx">
+      <DependentUpon>FM_TB_Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_TB_FeedingParam.resx">
+      <DependentUpon>FM_TB_FeedingParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_TB_OperateLog.resx">
+      <DependentUpon>FM_TB_OperateLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_TB_Privilege.resx">
+      <DependentUpon>FM_TB_Privilege.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_TB_Role.resx">
+      <DependentUpon>FM_TB_Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_TB_Role_Add.resx">
+      <DependentUpon>FM_TB_Role_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\FM_TB_UserInfo.resx">
+      <DependentUpon>FM_TB_UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formula\FM_FormulaMaterial.resx">
+      <DependentUpon>FM_FormulaMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formula\FM_FormulaMaterial_Add.resx">
+      <DependentUpon>FM_FormulaMaterial_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formula\FM_FormulaLibrary.resx">
+      <DependentUpon>FM_FormulaLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formula\FM_FormulaMix_AddStep.resx">
+      <DependentUpon>FM_FormulaMix_AddStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MultiLanguage\MultiLanguage.csproj">
+      <Project>{54f6103a-3275-41ae-a038-10af1467599f}</Project>
+      <Name>MultiLanguage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewuCommon\Common.csproj">
+      <Project>{b14b35b9-377b-40c5-8eb5-e8863f194eba}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewuControl\NewuControl.csproj">
+      <Project>{FDC22CB0-AD28-4146-9600-7B3482D6E99F}</Project>
+      <Name>NewuControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\Repository.csproj">
+      <Project>{4ee625b4-d5a3-436a-8e45-7d3e99b47087}</Project>
+      <Name>Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

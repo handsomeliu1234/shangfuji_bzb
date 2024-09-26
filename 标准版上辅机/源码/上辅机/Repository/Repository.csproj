@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4EE625B4-D5A3-436A-8E45-7D3E99B47087}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Repository</RootNamespace>
+    <AssemblyName>Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Dapper.2.0.4\lib\netstandard2.0\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper.Contrib, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Dapper.Contrib.2.0.4\lib\netstandard2.0\Dapper.Contrib.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.5.3.3\lib\net46\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\BaseDAL.cs" />
+    <Compile Include="GlobalConfig\AddressConst.cs" />
+    <Compile Include="GlobalConfig\Authorization.cs" />
+    <Compile Include="GlobalConfig\ComboBoxItem.cs" />
+    <Compile Include="GlobalConfig\ContinuedOrder.cs" />
+    <Compile Include="GlobalConfig\CreateTableRPT.cs" />
+    <Compile Include="GlobalConfig\CurrentRunInfoUtil.cs" />
+    <Compile Include="GlobalConfig\DbHelperSQL.cs" />
+    <Compile Include="GlobalConfig\DESEncrypt.cs" />
+    <Compile Include="GlobalConfig\FeedingParamWriteToMem.cs" />
+    <Compile Include="GlobalConfig\FormulaTranEventArgs.cs" />
+    <Compile Include="GlobalConfig\IVersionSet.cs" />
+    <Compile Include="GlobalConfig\IReportForm.cs" />
+    <Compile Include="GlobalConfig\LoadConfig.cs" />
+    <Compile Include="GlobalConfig\MemoryNotify.cs" />
+    <Compile Include="GlobalConfig\CreateDataTableUtil.cs" />
+    <Compile Include="GlobalConfig\NewuGlobal.cs" />
+    <Compile Include="GlobalConfig\SaveAlarmUtil.cs" />
+    <Compile Include="GlobalConfig\SaveCurve.cs" />
+    <Compile Include="GlobalConfig\SaveRawMix.cs" />
+    <Compile Include="GlobalConfig\ScaleAccuracy.cs" />
+    <Compile Include="GlobalConfig\TransFromulaUtil.cs" />
+    <Compile Include="Model\ConnDbInfo.cs" />
+    <Compile Include="Model\Formula.cs" />
+    <Compile Include="Model\FormulaMixF.cs" />
+    <Compile Include="Model\FormulaTechParamF.cs" />
+    <Compile Include="Model\FormulaWeighF.cs" />
+    <Compile Include="Model\MixerWeightShow.cs" />
+    <Compile Include="Model\MixerShow.cs" />
+    <Compile Include="Model\MixerState.cs" />
+    <Compile Include="Model\EmptyModel.cs" />
+    <Compile Include="Model\MixState.cs" />
+    <Compile Include="Model\RptFlagMDL.cs" />
+    <Compile Include="Model\RPT_CurveF.cs" />
+    <Compile Include="Model\RPT_DeviceEventF.cs" />
+    <Compile Include="Model\RPT_MixStepF.cs" />
+    <Compile Include="Model\RPT_Weight_GetBatchReport.cs" />
+    <Compile Include="Model\Scanner.cs" />
+    <Compile Include="Model\SYS_ActionStep.cs" />
+    <Compile Include="Model\TB_FormulaOperateLog.cs" />
+    <Compile Include="Model\View_FormulaMixF.cs" />
+    <Compile Include="Model\View_FormulaTechParamF.cs" />
+    <Compile Include="Model\View_FormulaTechParam.cs" />
+    <Compile Include="Model\View_FormulaWeighF.cs" />
+    <Compile Include="Repository\FormulaMixFRepository.cs" />
+    <Compile Include="Repository\FormulaTechParamFRepository.cs" />
+    <Compile Include="Repository\FormulaWeighFRepository.cs" />
+    <Compile Include="Repository\PrivilegeAuthentication.cs" />
+    <Compile Include="Repository\RPT_AlamlogRepository.cs" />
+    <Compile Include="Repository\PM_DevicePartOrderTranRepository.cs" />
+    <Compile Include="Repository\FormulaWeighRepository.cs" />
+    <Compile Include="Repository\FormulaMixRepository.cs" />
+    <Compile Include="Repository\FormulaModifyLogRepository.cs" />
+    <Compile Include="Helper\EntityHelper.cs" />
+    <Compile Include="Repository\FormulaMaterialRepository.cs" />
+    <Compile Include="Repository\FormulaTechParamRepository.cs" />
+    <Compile Include="Model\FormulaHostory.cs" />
+    <Compile Include="Model\FormulaMaterial.cs" />
+    <Compile Include="Model\FormulaMix.cs" />
+    <Compile Include="Model\FormulaModifyLog.cs" />
+    <Compile Include="Model\FormulaTechParam.cs" />
+    <Compile Include="Model\FormulaWeigh.cs" />
+    <Compile Include="Model\OrderStatistics.cs" />
+    <Compile Include="Model\PM_DevicePartOrderTran.cs" />
+    <Compile Include="Model\PM_OrderTran.cs" />
+    <Compile Include="Model\PM_ScanRecord.cs" />
+    <Compile Include="Model\RPT_AlarmLog.cs" />
+    <Compile Include="Model\RPT_AppEvent.cs" />
+    <Compile Include="Model\RPT_AutoCheckScale.cs" />
+    <Compile Include="Model\RPT_BarCodePrintLog.cs" />
+    <Compile Include="Model\RPT_Curve.cs" />
+    <Compile Include="Model\RPT_DeviceEvent.cs" />
+    <Compile Include="Model\RPT_EveryBinNoFinishtime.cs" />
+    <Compile Include="Model\RPT_MixStep.cs" />
+    <Compile Include="Model\RPT_Weight.cs" />
+    <Compile Include="Model\ScaleCheckSet.cs" />
+    <Compile Include="Model\SYS_ActionControl.cs" />
+    <Compile Include="Model\SYS_Device.cs" />
+    <Compile Include="Model\SYS_DevicePart.cs" />
+    <Compile Include="Model\SYS_DeviceType.cs" />
+    <Compile Include="Model\SYS_Factory.cs" />
+    <Compile Include="Model\SYS_Menu.cs" />
+    <Compile Include="Model\SYS_TechParam.cs" />
+    <Compile Include="Model\SYS_TypeCode.cs" />
+    <Compile Include="Model\SYS_WorkShop.cs" />
+    <Compile Include="Model\TB_Alarm.cs" />
+    <Compile Include="Model\TB_BinSeting.cs" />
+    <Compile Include="Model\TB_Department.cs" />
+    <Compile Include="Model\TB_FeedingParam.cs" />
+    <Compile Include="Model\TB_OperateLog.cs" />
+    <Compile Include="Model\TB_Privilege.cs" />
+    <Compile Include="Model\TB_Role.cs" />
+    <Compile Include="Model\TB_UserInfo.cs" />
+    <Compile Include="Model\View_FormulaMix.cs" />
+    <Compile Include="Model\View_FormulaWeigh.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\PM_OrderTranRepository.cs" />
+    <Compile Include="Repository\PM_ScanRecordRepository.cs" />
+    <Compile Include="Repository\RPT_AppEventRepository.cs" />
+    <Compile Include="Repository\RPT_AutoCheckScaleMixRepository.cs" />
+    <Compile Include="Repository\RPT_BarCodePrintLogRepository.cs" />
+    <Compile Include="Repository\RPT_BarcodeRecordRepository.cs" />
+    <Compile Include="Repository\RPT_CurveFRespository.cs" />
+    <Compile Include="Repository\RPT_CurveRespository.cs" />
+    <Compile Include="Repository\RPT_DeviceEventFRepository.cs" />
+    <Compile Include="Repository\RPT_DeviceEventRepository.cs" />
+    <Compile Include="Repository\RPT_MixStepFRepository.cs" />
+    <Compile Include="Repository\RPT_MixStepRepository.cs" />
+    <Compile Include="Repository\RPT_WeightRepository.cs" />
+    <Compile Include="Repository\ScaleCheckSetRepository.cs" />
+    <Compile Include="Model\TB_Security.cs" />
+    <Compile Include="Repository\SYS_ActionControlRepository.cs" />
+    <Compile Include="Repository\SYS_ActionStepRepository.cs" />
+    <Compile Include="Repository\SYS_DevicePartRepository.cs" />
+    <Compile Include="Repository\SYS_DeviceRepository.cs" />
+    <Compile Include="Repository\SYS_DeviceTypeRepository.cs" />
+    <Compile Include="Repository\SYS_FactoryRepository.cs" />
+    <Compile Include="Repository\SYS_MenuRepository.cs" />
+    <Compile Include="Repository\SYS_TechParamRepository.cs" />
+    <Compile Include="Repository\SYS_TypeCodeRepository.cs" />
+    <Compile Include="Repository\SYS_WorkShopRepository.cs" />
+    <Compile Include="Repository\TB_AlarmRepository.cs" />
+    <Compile Include="Repository\TB_BinSettingRepository.cs" />
+    <Compile Include="Repository\TB_DepartmentRepository.cs" />
+    <Compile Include="Repository\TB_FeedingParamRepository.cs" />
+    <Compile Include="Repository\TB_FormulaOperateLogRepository.cs" />
+    <Compile Include="Repository\TB_OperateLogRepository.cs" />
+    <Compile Include="Repository\TB_PrivilegeRepository.cs" />
+    <Compile Include="Repository\TB_RoleRepository.cs" />
+    <Compile Include="Repository\TB_SecurityRepository.cs" />
+    <Compile Include="Repository\TB_UserInfoRepository.cs" />
+    <Compile Include="Repository\ViewFormulaMixFRepository.cs" />
+    <Compile Include="Repository\ViewFormulaMixRepository.cs" />
+    <Compile Include="Repository\ViewFormulaTechParamFRepository.cs" />
+    <Compile Include="Repository\ViewFormulaTechParamRepository.cs" />
+    <Compile Include="Repository\ViewFormulaWeighFRepository.cs" />
+    <Compile Include="Repository\ViewFormulaWeighRepository.cs" />
+    <Compile Include="Model\RPT_BarcodeRecord.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\RPT_AutoCheckScale.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NewuCommon\Common.csproj">
+      <Project>{b14b35b9-377b-40c5-8eb5-e8863f194eba}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsCaptureVideo\WindowsCaptureVideo.csproj">
+      <Project>{39BF275E-82EC-493B-B18E-81575FD74FF2}</Project>
+      <Name>WindowsCaptureVideo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

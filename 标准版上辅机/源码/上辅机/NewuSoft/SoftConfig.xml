@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <!--（到期的年份月日（如2020.4.27即（27/30/12+4/12+（2020-1900到期时间减去1900年（默认以1900年开始））= 43924（取整））-->
+  <SystemPara>93950</SystemPara>
+  <!--分钟-->
+  <UnUseTime>10</UnUseTime>
+  <!--现场上辅机终炼 1#-->
+  <DeviceCode Code="1#Mix" />
+  <!--<MixType Code="UNFinalMix" />-->
+  <MixType Code="UNFinalMix" />
+  <NewuAutomation IP="192.168.11.54" DB="StandardMixer" USER="sa" PASS="newu" />
+  <NewuSoftData IP="192.168.11.54" DB="StandardMixer_Data" USER="sa" PASS="newu" />
+  <MasterData IP="192.168.11.54" DB="master" USER="sa" PASS="newu" />
+  <Worker group="A" order="1"  GroupSet="A/B/C/D" OrderSet="1/2/3" />
+
+  <!--设备部件是否启用
+      是否有下密炼机-->
+  <DevicePart Carbon="true" Rubber="true" Oil="true" Zno="true" Drug="true" Pla="true" Silane="true" DownMixer="true" Carbon2="false" Oil2="false"  Drug2="true" Zno2="false" />
+  <!--自动校秤开关-->
+  <AutoScaleCheck>false</AutoScaleCheck>
+  <!--自动校秤设定值的上限和每次递增的值-->
+  <AutoCheckWeightSet WeightSet="120/10/20/50" AllowError="0.005/0.001/0.010/0.100" />
+  <!--连续配方功能开关-->
+  <IsContinue>false</IsContinue>
+  <!--是否显示胶料手动称量画面秤值实时变化区域-->
+  <manualWeight>false</manualWeight>
+  <!--胶料屏是否显示设备车数-->
+  <IsShowPartBatch>true</IsShowPartBatch>
+  <!--开启公差下限权限-->
+  <UseLowerLimit>false</UseLowerLimit>
+  <!--秤精度,保留小数位,通过Math函数进行计算 通过Math函数计算-->
+  <CarbonDigit>2</CarbonDigit>
+  <OilDigit>2</OilDigit>
+  <RubberDigit>2</RubberDigit>
+  <ZnoDigit>2</ZnoDigit>
+  <SilaneDigit>2</SilaneDigit>
+  <PlaDigit>3</PlaDigit>
+  <DrugDigit>3</DrugDigit>
+  <!--仪表精度,获取的值/对应设置的值 下发、回踩密炼数据 和 仪表显示 做对应处理 通过Math函数计算-->
+  <TempDigit>1</TempDigit>
+  <EnergyDigit>1</EnergyDigit>
+  <SpeedDigit>1</SpeedDigit>
+  <PressDigit>1</PressDigit>
+  <!--曲线图回踩数值过大进行对应数值缩小-->
+  <TempValueScale>10</TempValueScale>
+  <SpeedValueScale>10</SpeedValueScale>
+  <RamValueScale>1</RamValueScale>
+  <PowerValueScale>10</PowerValueScale>
+  <EnergyValueScale>1</EnergyValueScale>
+  <PressValueScale>1</PressValueScale>
+  <VoltageValueScale>1</VoltageValueScale>
+
+  <PLC IP="127.0.0.1" />
+  <LocalPC IP="192.168.12.112" listenerPort_R="4001" listenerPort_D="4002" listenerPort_O="4003" listenerPort_ZnO="4004" listenerPort_C="4005" listenerPort_C2="4006" listenerPort_O2="4007" listenerPort_D2="4008" />
+  <Scanner RubUSE="false" DrugUSE="false" OilUSE="false" ZnoUSE="false"  CarbonUSE="false" CarbonUSE2="false" OilUSE2="false"  DrugUSE2="false"  ADDR="29960" />
+  <Language>Chinese</Language>
+  <Monitor>US_Carbon_6_Oil_1</Monitor>
+  <!--单机版1,网络版2-->
+  <Version>1</Version>
+  <!--清理报表数据库数据的配置信息-->
+  <DBClean Enable="false" Year="1" />
+  <!--软件版本设置-->
+  <SoftWareVersion>V2.0-svn1230</SoftWareVersion>
+  <!--导出文件盘符路径-->
+  <ExportPath>D</ExportPath>
+  <!--删除日志文件的配置信息-->
+  <DeleteFileLogDays Day="31" Time="14:00:00" />
+</Config>

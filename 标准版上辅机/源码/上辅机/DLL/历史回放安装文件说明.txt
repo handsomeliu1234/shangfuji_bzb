@@ -1,0 +1,4 @@
+1.先安装VC_redist2019.x86.exe
+2.在x86平台下生成所有文件
+3.复制DLL目录所有dll文件本机bin/x86/debug目录下
+4.复制bin/x86/debug下所有文件到工控机

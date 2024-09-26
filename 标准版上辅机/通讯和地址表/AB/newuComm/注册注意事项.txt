@@ -1,0 +1,2 @@
+1.opcdaauto.dll必须注册因为它是非托管程序集(c++）编写
+2.来源为kepserverv4安装后的windows\system32或windows\sysWOW64目录

@@ -1,0 +1,13 @@
+md en-US
+md vi-VN
+
+打开VS2013 开发人员命令提示
+
+resgen Lang.txt
+resgen Lang.en-US.txt
+resgen Lang.vi-VN.txt
+resgen Lang.th-TH.txt
+
+csc xxx.cs -res:Lang.resources  
+al -target:lib -embed:Lang.en-US.resources -culture:en-US -out:en-us\MultiLanguage.resources.dll
+al -target:lib -embed:Lang.vi-VN.resources -culture:vi-VN -out:vi-VN\MultiLanguage.resources.dll

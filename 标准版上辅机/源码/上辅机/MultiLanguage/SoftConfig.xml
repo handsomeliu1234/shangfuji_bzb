@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <SystemPara>99999</SystemPara>
+  <!--2020 10 1  44105-->
+  <FactoryType Code="9" />
+  <!--E为全钢  9为半钢-->
+  <EQUIP_CODE Code ="90102"/>
+  <!--MES 指定的本机台的条码-->
+
+  <DeviceCode Code="3#Mix" />
+  <MixType Code="unFinalMix" />
+
+  <NewuAutomation IP="192.168.64.129" DB="NewuSoft_MPTL_M" USER="sa" PASS="newu" />
+  <NewuSoftData IP="192.168.64.129" DB="NewuSoft_Data_MPTL_M" USER="sa" PASS="newu" />
+  <Language>Chinese</Language>
+  <!--English-->
+  <!--Vietnamese-->
+  <!--Chinese-->
+</Config>
+
